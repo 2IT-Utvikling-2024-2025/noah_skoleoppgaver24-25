@@ -1,0 +1,22 @@
+div{
+
+    border: black 1px solid;
+
+    margin: 5px;
+
+
+}
+.sidetittel{
+    text-align: center;
+    border: black 2px solid;
+    background-color: antiquewhite;
+}
+
+body {
+    background: url(./images/fotball.jpg);
+    background-size: cover;
+    
+}
+.innhold{
+    display: flex;
+}
