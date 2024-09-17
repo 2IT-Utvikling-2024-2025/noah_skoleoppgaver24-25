@@ -1,0 +1,31 @@
+.to-do-list{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+h1{
+    font-size: 4rem;
+}
+button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+.add-button{
+    background-color: green;
+}
+.add-button:hover{
+    background-color: lime;
+}
+.delete-button{
+    background-color: red;
+}
+.delete-button:hover{
+    background-color: pink;
+}
+ 
