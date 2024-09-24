@@ -6,39 +6,44 @@ function App() {
 
   return (
     <>
-    <div className='1'>
-      <h1>OPPSETT AV LAB-PCEN</h1>
-      <h2>1 Planlegging</h2>
-      <p>Det første vi måtte gjøre var å planlegge prosessen og hvordan vi skulle dokumentere prosessen. Nå skal jeg være ærlig og si at vi ikke fullførte å lese oppgaveteksten, men vi fikk en god ide av hva oppgaven var før vi begynte, og kom med ideer til hvordan vi kunne gå framover.  Etter det så planlegga vi navnestandard og statisk IP-adresse til klienten.</p>
-      </div>
-      <br />
-      <h2>2 Installering av Windows</h2>
-      <p>Det første jeg gjorde var å installere Rufus og Windows setup på hovedpcen min, dette gjorde jeg fordi jeg trenger disse filene til strategien jeg skulle bruke. Denne strategien var å bruke en minnepen til å overføre filene. Dette gjorde sånn at jeg bare kunne glemme den forrige brukeren på denne pc-en og lage en helt ny bruker uten de tidligere filene osv. Dette tok en god del tid pga installeringer og på grunn av at minnepenner var I høy demand. Deretter boota jeg opp Lab pcen med Rufus USBen. Der partisjonerte jeg diskene under installasjon prosessen. Etter installasjonen så måtte jeg konfigurere Lab PC-en til en navnestandard og statisk IP-adresse.
-
+      <h1> OPPSETT AV LAB-PCEN</h1>
+        <br />
+        <p>Innhold
+1 Planlegging	1
+2 Oppsett av Windows	2
+3 Ping	3
+4 Brannmur	4
+5 Filezilla………………………………………………………………………………………………………………5
+6 Refleksjon ………………………………………………………………………………………………………….4
 </p>
-      <br />
-      <h2>3 Oppsetting av server/ethernetkabel</h2>
-      <p>Etter vi hadde installert Windows så måtte vi sette opp FTP server og gjøre sånn at vi var på same nett og kunne kommunisere. Det vi gjorde var å koble oss til same server via Ethernet kabler så bare vi kunne kommunisere med hverandre. Dette lar oss også sette opp file transport protokoll server. Vi prøvde først å bruke Windows sin file transport, men den var veldig avansert og vi brukte istedet filezilla. I Windows Firewall så måtte vi åpne port 21 (TCP) som er FTP porten til å kommunisere med klienten vår. Filezilla har også 2 andre porter som åpner automatisk, disse portene blir brukt til å koble til Filezilla serverne. Du må sette et master password for serveren og passordet skal brukes til å logge på serveren. I Administration interface så må IP-en være 127.0.0.1 som er en loopback til vår server. Og der kan du konfigurere IP-adresser som får lov til å koble til, lage brukere med spesifikke rettigheter og et valg om brukeren kan velge med å logge med passord eller uten passord. Også må du legge til en path eller en directory der brukeren får tilgang til, for eksempel vi kan gi brukeren C:\ directory som får brukeren tilgang til hele C: disken. Etter det så prøvde vi å koble til FTP serveren og det funka uten noen problemer. </p>
-      <br />
-      <h2>Spørsmål</h2>
-      <p>
-- Hva har du lært gjennom denne oppgaven? 
 <br />
+<p>1 Planlegging   
+PCNAVN: 2ITA24
+Brukernavn: Felix
+Diskene skal bli partisjoner i 45/175GB. 
+Jeg skal bruke IP Adressen 192.168.1.15 for å kommunisere med andre enheter på nettverket. Men jeg kunne velge mellom 192.168.1.1 - 192.168.1.19
+Jeg skal installere Windows helt fra scratch for å få en bedre forståelse for operativsystemet
+</p>
 <br />
-Jeg har lært hvordan jeg kan installere windows på pcer og lært mye mer om BIOS systemet til pc-en. Også har jeg lært hvordan jeg gjør oppsett på en pc fra scratch uten internett som var vanskelig men lærerikt.
+<p>2 Oppsett av Windows 
+Det første vi skal gjøre etter vi har valgt PC-ene våre er å wipe gamle operativsystemet.  Deretter må du ha en minnepenn med Windows 10/11 installert.  Velg usb fra boot menyen og velg deretter windows. Deretter må du partisjonere disken i installasjonen av Windows. Fullfør installasjonen av Windows etter dette.
+</p>
 <br />
+<p> 3 Ping
+Etter du er ferdig med installasjonen av Windows så må du sikre at du er koblet til samme nettverk som de andre på gruppen din. Dette gjøres via Ethernet kabler som styres via switchen.
+</p>
 <br />
-- Hvordan har din innsats og fokus vært?  
+<p>4 Brannmur
+Før vi laster ned FileZilla og bruker den til å eksperimentere, så må vi skifte noen innstillinger på brannmuren vår. Finn veien fram til Avanserte innstillinger på Fire Wallen din. Deretter - Inbound Rules - New Rule - Port - Port 21
+</p>
 <br />
+<p>5 Filezilla
+Når du er sikker på at du er koblet til samme nettverk som kollegaene dine, så må du laste ned Filezilla via nettsøker.  Du skal laste ned klient-versjonen av FileZilla. Deretter så må du koble samme server som de andre på FileZilla.
+</p>
 <br />
-Jeg syntes ikke fokuset mit thar vært det aller beste på denne oppgaven, men det kan også i lite ngrad takkes til at jeg har vært litt dårlig, men jeg føler at innsatsen min også har vært litt for lavt for min standard. Jeg konkluderer med at jeg kunne gjort det bedre.
-<br />
-<br />
-- Om du skal utføre oppgaven en gang til, er det noe du ville gjort annerledes?
-<br />
-<br />
-Jeg ville putta mer innsats, mer fokus og mer energi i oppgaven. jeg ville også lest oppgavetekste n,mye mer nøye fordi det var mye viktig informasjon som jeg gikk glipp av pga at jeg ikke leste den, også ville jeg sgat at å samarbeide bedre kunne vært noe jeg kunne forbedret meg på.
-
+<p>6 Refleksjon
+Denne oppgaven har vært tøff, og jeg har lært mye. Jeg merker at innsatsen min kunne vært mye bedre, og at sluttproduktet kunne vært av høyere kvalitet. Men, jeg er uansett fornøyd med all den kunnskapen jeg fikk gjennom dette prosjektet. Jeg lærte veldig mye om PC-en min som jeg ikke visste, og om operativsystemet jeg bruker hver dag. 
+Jeg visste ikke hvordan man kunne reinstallere Windows på en PC før dette prosjektet, jeg visste heller ikke hvordan lokale nettverk kunne fungere med bare Ethernet kabler. Jeg lærte også mye om BIOS til Windows som jeg alltid syntes var så komplisert før, nå er jeg litt vant til den. Denne oppgaven har vært veldig tøff og lærerik, det har ikke vært mangel av ganger der jeg har hatt lyst til å gi opp. Men det denne oppgaven har lært meg er at samarbeid er enn av de viktigste egenskapene vi har. Jeg merket at samarbeid var veldig viktig for å kunne komme videre i oppgavene, både når jeg hjalp og fikk hjelp.
 </p>
     </>
   )
