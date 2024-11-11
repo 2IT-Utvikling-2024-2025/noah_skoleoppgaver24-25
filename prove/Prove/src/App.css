@@ -1,0 +1,47 @@
+.Norge{
+  text-align: center;
+  border-style: solid;
+  max-height: 500px;
+  max-width: 500px;
+}
+.Sverige{
+  text-align: center;
+  border-style: solid;
+  max-height: 500px;
+  max-width: 500px;
+}
+.Danmark{
+  text-align: center;
+  border-style: solid;
+  max-height: 500px;
+  max-width: 500px;
+}
+.England{
+  text-align: center;
+  border-style: solid;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.flexboxdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.DanmarkFlag{
+  max-height: 200px;
+  max-width: 200px;
+}
+.EnglandFlag{
+  max-height: 200px;
+  max-width: 200px;
+}
+.NorgeFlag{
+  max-height: 200px;
+  max-width: 200px;
+}
+.SverigeFlag{
+  max-height: 200px;
+  max-width: 200px;
+}
