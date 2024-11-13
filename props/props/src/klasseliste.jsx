@@ -11,7 +11,7 @@ const StudentMap = () => {
     { id: 7, name: 'Liam Payne', grade: '3' },
     { id: 8, name: 'Diddy', grade: '2' },
     { id: 9, name: 'Juan Parta', grade: '6' },
-    { id: 10, name: 'Rapeinha', grade: '3' },
+    { id: 10, name: 'Raprinha', grade: '3' },
   ]);
 
   const [name, setName] = useState('');
