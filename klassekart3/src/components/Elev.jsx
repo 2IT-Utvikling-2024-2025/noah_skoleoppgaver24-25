@@ -1,32 +1,22 @@
+import React from 'react';
 import './Elev.css'
+function Elev({ id, navn, onChange }) {
+  const [localNavn, setLocalNavn] = React.useState(navn);
 
-export default function Elever (){
-    return (
-    <div className='bord'>
-        <h1>Elev</h1>
+  const handleNavnChange = (e) => {
+    setLocalNavn(e.target.value);
+    onChange(e.target.value);
+  };
+
+  return (
+    <div>
+      <input type="text" value={localNavn} onChange={handleNavnChange} />
     </div>
-    
-    )
+  )
 }
-const elever = document.querySelectorAll('.elev');
 
-elever.forEach((elev) => {
-  elev.addEventListener('dragstart', (e) => {
-    e.dataTransfer.setData('text', elev.textContent);
-  });
-});
+export default Elev
 
-document.addEventListener('dragover', (e) => {
-  e.preventDefault();
-});
 
-document.addEventListener('drop', (e) => {
-  const elevText = e.dataTransfer.getData('text');
-  const container = document.querySelector('.container');
-  const newElev = document.createElement('div');
-  newElev.classList.add('elev');
-  newElev.textContent = elevText;
-  container.appendChild(newElev);
-});
 
 
