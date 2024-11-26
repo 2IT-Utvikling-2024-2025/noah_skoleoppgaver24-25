@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css'
 import Elever from './components/Elev.jsx'
 
@@ -49,8 +50,6 @@ function App() {
     <Elever id={13} navn={elevNavn[13]} onChange={(navn) => handleNavnChange(13, navn)} />
     <Elever id={14} navn={elevNavn[14]} onChange={(navn) => handleNavnChange(14, navn)} />
     <Elever id={15} navn={elevNavn[14]} onChange={(navn) => handleNavnChange(15, navn)} />
-
-
         </div>
       </div>
     </div>

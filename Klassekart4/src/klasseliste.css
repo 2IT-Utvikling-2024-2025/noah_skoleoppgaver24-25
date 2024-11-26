@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  color: #fff; /* hvit tekst */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  background-color: #333; /* mørk grå bakgrunn */
+  cursor: pointer; /* pekerkurser for å indikere at det er en knapp */
+}
+
+.button:hover {
+  background-color: #555; /* lysere mørk grå bakgrunn ved hover */
+}
+
+.button:active {
+  background-color: #666; /* mørkere grå bakgrunn ved klikk */
+}
